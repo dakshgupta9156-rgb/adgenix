@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#d946ef" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe margin -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="#6366f1" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Core emblem glow -->
+  <circle cx="256" cy="256" r="140" fill="url(#primaryGrad)" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Outer aperture / shield ring -->
+  <circle cx="256" cy="256" r="144" fill="none" stroke="url(#primaryGrad)" stroke-width="8" stroke-dasharray="24 12" />
+
+  <!-- Inner aperture hexagon -->
+  <polygon points="256,150 348,203 348,309 256,362 164,309 164,203" fill="#1e1b4b" stroke="url(#primaryGrad)" stroke-width="6" />
+
+  <!-- Lightning Bolt (Autonomous Speed & Deals) -->
+  <path d="M276 170 L196 276 L250 276 L236 342 L316 236 L262 236 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+
+  <!-- Rupee Badge Accent -->
+  <circle cx="340" cy="180" r="32" fill="#047857" stroke="#10b981" stroke-width="3" />
+  <text x="340" y="192" font-family="-apple-system, system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">₹</text>
+
+  <!-- Title Monogram Text -->
+  <text x="256" y="420" font-family="-apple-system, system-ui, sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">ADGENIX</text>
+  <text x="256" y="448" font-family="-apple-system, system-ui, sans-serif" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle" letter-spacing="3">AUTONOMOUS AD AGENT</text>
+</svg>

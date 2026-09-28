@@ -1,0 +1,6 @@
+{
+  "name": "AdGenix - Autonomous AI Ad Agency Agent",
+  "description": "Autonomous AI ad agent that finds leads, sends personalized outreach, generates UGC & Meta ad campaigns, negotiates pricing, closes deals, and notifies you instantly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
